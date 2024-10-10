@@ -8,6 +8,10 @@ body {
     background-color: #f4f4f4;
 }
 
+nav {
+    margin-bottom:  20px;
+}
+
 .card-container {
     display: flex;
     border: 2px solid black;
