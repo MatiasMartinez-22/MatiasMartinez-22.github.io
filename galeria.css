@@ -1,5 +1,7 @@
+/* Estilo general del cuerpo */
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -8,46 +10,66 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Estilo para la barra de navegación */
+nav {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #333;
+    text-align: center;
+}
 
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal de la maqueta */
 .card-container {
     display: flex;
     border: 2px solid black;
     border-radius: 30px;
-    width: 400px;
-    height: 200px;
+    width: 500px; /* Ancho del contenedor */
+    height: 250px; /* Altura del contenedor */
     overflow: hidden;
+    background-color: white;
 }
 
+/* Sección del texto a la izquierda */
 .text-section {
     display: flex;
     flex-direction: column;
-    flex-basis: 60%; /* Esta parte ocupa el 60% del ancho */
-    padding: 10px;
+    justify-content: space-between;
+    flex-basis: 60%; /* Ocupa el 60% del ancho */
+    padding: 15px;
     border-right: 2px solid black;
     box-sizing: border-box;
 }
 
+/* Nombre en la parte superior */
 .name {
     font-weight: bold;
+    font-size: 20px;
     text-align: center;
-    flex-basis: 50%;
     border-bottom: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-bottom: 10px;
 }
 
+/* Descripción en la parte inferior */
 .description {
+    font-size: 16px;
     text-align: center;
-    flex-basis: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 10px;
 }
 
+/* Sección de la imagen a la derecha */
 .image-section {
-    flex-basis: 40%; /* Esta parte ocupa el 40% del ancho */
+    flex-basis: 40%; /* Ocupa el 40% del ancho */
     display: flex;
     justify-content: center;
     align-items: center;
