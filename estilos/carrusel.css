@@ -1,6 +1,6 @@
 #imagen{
     border: 3px solid #ffffff8b;
-    border-radius: 50%;
+    border-radius: 5%;
     width: 100%;
     height: 100%;
 
@@ -9,8 +9,7 @@
 
 }
 
-.section-carrusel{
-}
+
 
 .contenedor{
     display: flex;
@@ -22,9 +21,9 @@
     align-items: center;
 }
 .botones{
-    z-index: 2;
+    z-index: 1;
     position:absolute;
-    top:80%;
+
 
     font-size: 30px;
     width: 70px;
@@ -42,6 +41,7 @@
     transition: all .3s ease;
 
 }
+
 
 .botones:hover{
     cursor: pointer;
