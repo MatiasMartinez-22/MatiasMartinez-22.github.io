@@ -16,3 +16,13 @@ body {
     
 
 }
+
+.image-section >img {
+    width: 300px;
+    overflow: hidden;
+}
+
+.name {
+    box-sizing: border-box;
+    max-width: 400px;
+}
