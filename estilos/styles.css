@@ -1,10 +1,13 @@
+*{
+    color: #fff;
 
+}
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #1e1e1e; /* Fondo oscuro */
-   
+
 }
 
 #fondo {
@@ -36,13 +39,15 @@ nav a {
 }
 
 nav a:hover {
-    color: #e5dfde; /* Cambiar color al pasar el mouse */
+   /* color: #e5dfde;  Cambiar color al pasar el mouse */
+    color: #89bff5;
 }
 
 /* Section styles */
 section {
     text-align: center;
     margin: 40px 0;
+
 }
 
 section h1 {
@@ -102,11 +107,14 @@ footer {
 
 
 .inicio-text {
-    color: #060606;
+    /*color: #060606;*/
+    color: #fff;
+
     
 }
 
 #difuminado {
+
     background-color: rgba(57, 54, 54, 0.8)
-    
+
 }
