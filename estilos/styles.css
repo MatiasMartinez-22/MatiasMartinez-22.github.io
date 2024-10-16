@@ -123,12 +123,13 @@ footer {
     background-color: rgba(57, 54, 54, 0.8);
     padding: 50px;
     border: 1px solid rgb(18, 17, 18);
+    align-items: center;
 
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     
-    width: 900px;
+    width: 850px;
 }
 
 .box {
