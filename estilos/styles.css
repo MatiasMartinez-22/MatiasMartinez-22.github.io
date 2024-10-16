@@ -131,6 +131,7 @@ a .imagenesFooter {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
+    justify-content: center;
     
     width: 850px;
 }
@@ -144,4 +145,10 @@ a .imagenesFooter {
     width: 400px;
     height: 700px;
 
+<<<<<<< Updated upstream
 }
+=======
+    
+
+}
+>>>>>>> Stashed changes
