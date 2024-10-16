@@ -118,3 +118,21 @@ footer {
     background-color: rgba(57, 54, 54, 0.8)
 
 }
+
+.container {
+    background-color: #c0392b;
+    padding: 10px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: 5px solid black;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
+
+}
