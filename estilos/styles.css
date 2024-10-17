@@ -92,22 +92,6 @@ aside h2, article h2 {
     color: #f39c12; /* Color naranja dorado */
 }
 
-footer {
-    background-color: #2c3e50;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-    width: 100%;
-}
-
-
-
-a .imagenesFooter {
-    width: 90px;
-    padding: 10%;
-}
-
-
 
 .inicio-text {
     /*color: #060606;*/

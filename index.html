@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/estilos/styles.css">
     <link rel="stylesheet" href="/estilos/articulos.css">
     <link rel="stylesheet" href="/estilos/carrusel.css">
+    <link rel="stylesheet" href="/estilos/piePagina.css">
+
 
     
 </head>
@@ -22,7 +24,7 @@
         </nav> 
     </header>
 
-    <section >
+    <section id="sobreNosotros">
         
             <section >
                 <article id="difuminado">
@@ -68,7 +70,7 @@
 
    </section>
    
-    <section class="container">
+    <section class="container" id="articulosvarios">
 
         <div class="box">   <!--articulo 1-->
             <article class="text-section">
@@ -130,29 +132,33 @@
 <!--bizarreada-->
     
 
-    <footer id="pie-pagina">
-
-        <div>
-            <h1>
-                Seguinos en nuestras redes sociales
-
-            </h1>
-            <a  href="https://www.facebook.com">    
-               <img class="imagenesFooter" src="/imagenes/piePagina/facebook.png" alt="facebook"  >
-            </a>
-            <a href="https://www.instagram.com"> 
-                <img class="imagenesFooter" src="/imagenes/piePagina/instagram.png" alt="instagram" >
-
-            </a>
-            <a href="https://web.whatsapp.com"> 
-                <img class="imagenesFooter" src="/imagenes/piePagina/whatsapp.png" alt="whatsapp" >
-
-            </a>
-
-
+<footer id="pie-pagina">
+    <div class="footer-container">
+        <div class="footer-section">
+            <img id="footerLogo" src="/imagenes/piePagina/huella.png" alt="">
         </div>
-        <hr>
-    </footer>
+        <div class="footer-section">
+            <h3>Informacion</h3>
+            <ul>
+                <li><a href="/index.html#sobrenosotros">Sobre Nosotros</a></li>
+                <li><a href="/index.html#articulosvarios">Articulos</a></li>
+                <li><a href="/paginas/donaciones.html">Donaciones</a></li>
+                <li><a href="#">Galeria de imagenes</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Síguenos</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com"><img src="/imagenes/piePagina/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com"><img src="/imagenes/piePagina/instagram.png" alt="Instagram"></a>
+                <a href="https://web.whatsapp.com"><img src="/imagenes/piePagina/whatsapp.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Protectora de Animales. Todos los derechos reservados.</p>
+    </div>
+</footer>
     <script src="scripts/carruselV2.js"></script>
 
 
