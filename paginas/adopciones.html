@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/estilos/styles.css">
     <link rel="stylesheet" href="/estilos/cabecera.css">
     <link rel="stylesheet" href="/estilos/articulos.css">
+    <link rel="stylesheet" href="/estilos/formularios.css">
 
 
     <link rel="icon" type="image/x-icon" href="/imagenes/logo/favicon.ico">
@@ -36,7 +37,7 @@
     <section >
         
         <section >
-            <article  class="difuminado">
+            <article  class="difuminado"><!--introduccion de pagina-->
                 <h1 class="inicio-text">Adopta, Cambia una Vida, Cambia la Tuya</h1>
                 <p class="inicio-text">Adoptar una mascota es más que darle un hogar a un ser que lo necesita;
                      es un acto de amor que transforma la vida de ambos. En nuestra protectora de animales,
@@ -101,7 +102,35 @@
     
 </section>
 
-    <footer id="pie-pagina">
+<section>
+    <div class="form-registro">
+        <form id="form-registro">
+            <h4>Formulario registro</h4>
+            <input class="controls" type="text" name="nombre" id="nombre" placeholder="nombre">
+            <input class="controls" type="text" name="apellido" id="apellido" placeholder="apellido">
+            <input class="controls" type="text" name="mail" id="mail" placeholder="mail">
+            <input class="controls" type="text" name="contraseña" id="contraseña" placeholder="contraseña">
+            <p>estoy de acuerdo con los <a href="Terminos y condiciones">Terminos y condiciones</a></p>
+            <input class="boton" type="submit" value="Registrar">
+        </form>
+        <script>
+            // Capturamos el formulario por su ID
+            document.getElementById('form-registro').addEventListener('submit', function(e) {
+               e.preventDefault(); // Evita el envío del formulario y recarga de página
+         
+               // Aquí puedes hacer más validaciones si es necesario
+         
+               // Muestra el mensaje emergente
+               alert("¡Has sido registrado con éxito!");
+            });
+         </script>
+    </div>
+</section>
+
+
+
+
+    <footer id="footer"><!--pie de pagina-->
         <div class="footer-container">
             <div class="footer-section">
                 <img id="footerLogo" src="/imagenes/piePagina/huella.png" alt="">
