@@ -1,13 +1,14 @@
 *{
     color: #fff;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    scrollbar-width: none;
 
 }
 body {
     margin: 0;
     padding: 0;
     background-color: #1e1e1e; /* Fondo oscuro */
+    
 
 }
 

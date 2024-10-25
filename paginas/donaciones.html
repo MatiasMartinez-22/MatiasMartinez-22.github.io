@@ -19,11 +19,11 @@
         <nav class="navbar">  <!--navegador-->
 
             <div class="logo">
-                <a href="#">Protectora de Animales</a>
+                <a href="/index.html">Protectora de Animales</a>
             </div>
             <ul class="nav-links">
                 <li><a href="/index.html">Inicio</a> </li>
-                <li> <a href="#pie-pagina">Contactanos</a> </li>
+                <li> <a href="#footer" id="contact-link">Contactanos</a></li>
                 <li> <a href="/paginas/adopciones.html">Adopciones</a> </li>
                 <li> <a href="/paginas/donaciones.html">Donaciones </a> </li>
                 
@@ -57,17 +57,7 @@
                     <p>estoy de acuerdo con los <a href="Terminos y condiciones">Terminos y condiciones</a></p>
                     <input class="boton" type="submit" value="Registrar">
                 </form>
-                <script>                                          // script de mensaje emergente
-                    // Capturamos el formulario por su ID
-                    document.getElementById('form-registro').addEventListener('submit', function(e) {
-                       e.preventDefault(); // Evita el envío del formulario y recarga de página
-                 
-                       // Aquí puedes hacer más validaciones si es necesario
-                 
-                       // Muestra el mensaje emergente
-                       alert("¡Has sido registrado con éxito!");
-                    });
-                 </script>
+                
             </div>
     </section>
 
@@ -109,5 +99,7 @@
     </footer>
 
     <script src="/scripts/carruselV2.js"></script>
+    <script src="/scripts/footer.js"></script>
+    <script src="/scripts/formulario.js"></script>
 </body>
 </html>

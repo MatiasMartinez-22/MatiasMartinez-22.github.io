@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="/estilos/styles.css">
     <link rel="stylesheet" href="/estilos/articulos.css">
     <link rel="stylesheet" href="/estilos/formularios.css">
+<<<<<<< Updated upstream
     <link rel="stylesheet" href="/estilos/piePagina.css">
     <link rel="stylesheet" href="/estilos/cabecera.css">
     <link rel="stylesheet" href="/estilos/tarjeta.css">
+=======
+    
+>>>>>>> Stashed changes
 
 
     <link rel="icon" type="image/x-icon" href="/imagenes/logo/favicon.ico">
@@ -25,7 +29,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="/index.html">Inicio</a> </li>
-                <li> <a href="#pie-pagina">Contactanos</a> </li>
+                <li> <a href="#footer" id="contact-link">Contactanos</a></li>
                 <li> <a href="/paginas/adopciones.html">Adopciones</a> </li>
                 <li> <a href="/paginas/donaciones.html">Donaciones </a> </li>
             </ul>
@@ -227,14 +231,27 @@
     <div class="form-registro">
         <form id="form-registro">
             <h4>Formulario registro</h4>
-            <input class="controls" type="text" name="nombre" id="nombre" placeholder="nombre">
-            <input class="controls" type="text" name="apellido" id="apellido" placeholder="apellido">
-            <input class="controls" type="text" name="mail" id="mail" placeholder="mail">
-            <input class="controls" type="text" name="contraseña" id="contraseña" placeholder="contraseña">
+            <input class="controls" type="text" name="name" id="name" placeholder="nombre" required>
+            <span class="error" id="nameError"></span>
+
+            <input class="controls" type="text" name="apellido" id="apellido" placeholder="apellido" required>
+            <span class="error" id="apellidoError"></span>
+
+            <input class="controls" type="email" name="email" id="email" placeholder="@email">
+            <span class="error" id="emailError"></span>
+
+            <input class="controls" type="text" name="telefono" id="telefono" placeholder="telefono" maxlength="11" required >
+            <span class="error" id="telefonoError"></span>
+
             <p>estoy de acuerdo con los <a href="Terminos y condiciones">Terminos y condiciones</a></p>
+
             <input class="boton" type="submit" value="Registrar">
+
+            
         </form>
-        <script>
+
+        
+<!--         <script>
             // Capturamos el formulario por su ID
             document.getElementById('form-registro').addEventListener('submit', function(e) {
                e.preventDefault(); // Evita el envío del formulario y recarga de página
@@ -244,9 +261,15 @@
                // Muestra el mensaje emergente
                alert("¡Has sido registrado con éxito!");
             });
-         </script>
+         </script> -->
     </div>
+<<<<<<< Updated upstream
 </div>
+=======
+
+    <div class="feedback" id="feedback"></div>
+</section>
+>>>>>>> Stashed changes
 
 
 
@@ -280,6 +303,8 @@
     </footer>
 
 
-
+    <script src="/scripts/footer.js"></script>
+    <script src="/scripts/formulario.js"></script>
+    
 </body>
 </html>

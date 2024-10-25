@@ -51,8 +51,29 @@
 
 .form-registro .boton {
     width: 100%;
-    background-color: blueviolet;
+    background-color: rgb(67, 62, 210) ;
     border: none;
     padding: 16px;
     font-size: 16px;
+    border-radius: 6px;
 }
+
+.feedback {
+    margin-top: 15px;
+    padding: 10px;
+    
+    border: 1px solid rgb(from white r g b);
+    height: auto;
+    width: 400px;
+    display: none;  
+    text-align-last: center;
+    border-radius: 15px;
+    background-color: rgb(67, 62, 210);
+    
+}
+
+
+
+
+
+
