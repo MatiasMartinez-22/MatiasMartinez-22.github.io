@@ -1,38 +1,4 @@
-/*             
-            
-            
-            
-        // Capturamos el formulario por su ID
-            document.getElementById('form-registro').addEventListener('submit', function(e) {
-                e.preventDefault(); // Evita el envío del formulario y recarga de página
-          
-                // Aquí puedes hacer más validaciones si es necesario
-          
-                // Muestra el mensaje emergente
-                alert("¡Has sido registrado con éxito!");
-             });
 
-
-// Capturamos el formulario por su ID
-document.getElementById('form-registro').addEventListener('submit', function(e) {
-    e.preventDefault(); // Evita el envío del formulario y recarga de página
- 
-    // Obtenemos los valores de los inputs
-    var nombre = document.getElementById('nombre').value.trim();
-    var apellido = document.getElementById('apellido').value.trim();
-    var mail = document.getElementById('mail').value.trim();
-    var contraseña = document.getElementById('contraseña').value.trim();
- 
-    // Validamos que todos los campos estén llenos
-    if (nombre === "" || apellido === "" || mail === "" || contraseña === "") {
-        alert("Por favor, rellena todos los campos.");
-        return;
-    }
- 
-    // Aquí puedes hacer más validaciones si es necesario
-    // Si todo está correcto, muestra el mensaje emergente
-    alert("¡Has sido registrado con éxito!");
- }); */
 
 
  const form = document.querySelector('.form-registro');
@@ -82,7 +48,7 @@ document.getElementById('form-registro').addEventListener('submit', function(e) 
     } */
 
     // Validación del número de teléfono
-if (!/^[1-9]\d{3}-[1-9]\d{5}$/.test(telefono.value.trim())) {
+if (!/^[0-9]\d{3}[0-9]\d{5}$/.test(telefono.value.trim())) {
     showError('telefonoError', 'El número de teléfono no es válido');
     telefono.classList.add('error-input');
     hasError = true;
@@ -113,27 +79,7 @@ if (!/^[1-9]\d{3}-[1-9]\d{5}$/.test(telefono.value.trim())) {
      document.getElementById(elementId).textContent = message;
  }
 
-/*  // Función para mostrar el feedback
- function showFeedback(name, apellido, email, telefono ) {
-     const feedback = document.getElementById('feedback');
-     feedback.style.display = 'block'; 
-     feedback.innerHTML = `
-         <h3>Ya te contactaremos:</h3>
-     `;
- } */
 
- // Función para mostrar el feedback
-/* function showFeedback(name, apellido, email, telefono) {
-    const feedback = document.getElementById('feedback');
-    feedback.style.display = 'block'; 
-    feedback.innerHTML = `
-        <h3>Datos Ingresados:</h3>
-        <p><strong>Nombre:</strong> ${name}</p>
-        <p><strong>Apellido:</strong> ${apellido}</p>
-        <p><strong>Correo Electrónico:</strong> ${email ? email : 'No proporcionado'}</p>
-        <p><strong>Teléfono:</strong> ${telefono}</p>
-    `;
-} */
 
 // Función para mostrar el feedback
 function showFeedback(name, apellido, email, telefono) {

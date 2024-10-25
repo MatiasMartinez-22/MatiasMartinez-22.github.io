@@ -1,4 +1,4 @@
-.contenedor {
+ .contenedor {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -82,10 +82,8 @@
     background-color: rgba(0, 0, 0, 0.231);
     border-radius: 10px;
   }
+ 
 
-
-
-  
 
 
 
