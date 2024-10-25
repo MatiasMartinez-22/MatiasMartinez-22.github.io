@@ -159,3 +159,32 @@ aside h2, article h2 {
    transform: scale(1.05,1.05);
    transition: transform 0.3s ease;
 }
+
+.formularioImagen{
+
+    width: 100%;
+    margin: 20px;
+    padding:10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.conjuntoImagenes{
+    width: 60%;
+    display: flex;
+
+    padding: 10px;
+
+    justify-content: center;
+    gap: 10px;
+
+}
+
+
+ .columna{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
