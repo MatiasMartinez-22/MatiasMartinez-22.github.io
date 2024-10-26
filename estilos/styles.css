@@ -81,7 +81,7 @@ button {
 }
 
 button:hover {
-    background-color: #c0392b;
+    background-color: #252222f0;
 }
 
 /* Aside and Article */
@@ -92,9 +92,9 @@ aside, article {
     border-radius: 10px;
 }
 
-aside h2, article h2 {
+/* aside h2, article h2 {
     color: #f39c12; /* Color naranja dorado */
-}
+
 
 
 .inicio-text {
