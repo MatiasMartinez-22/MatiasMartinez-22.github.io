@@ -6,11 +6,15 @@
 
 .form-registro {
     width: 400px;
-    background-color: rgb(17, 14, 35);
+    background-color: rgba(0, 0, 0, 0.5);
+
     padding: 30px;
     margin: auto;
     margin-top: 50px;
     border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
 
 }
 
@@ -21,11 +25,12 @@
 
 .controls {
     width: 100%;
-    background-color: rgb(23, 19, 45);
+    background-color: rgba(0, 0, 0, 0.5);
+
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid rgb(17, 14, 35);
+    border: 1px solid rgb(0, 0, 0);
     font-family: 'calibri';
     font-size: 18px;
 
@@ -51,11 +56,18 @@
 
 .form-registro .boton {
     width: 100%;
-    background-color: rgb(67, 62, 210) ;
+    background-color: rgb(5, 5, 6) ;
     border: none;
     padding: 16px;
     font-size: 16px;
     border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.boton:hover{
+    background-color: #0000009d;
+
 }
 
 .feedback {
