@@ -4,6 +4,7 @@
     scrollbar-width: none;
 
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -16,9 +17,18 @@ body {
 
 #fondo {
     /*background-image: url(/imagenes/fondos/patitas-fondo.png);*/
-    background: linear-gradient(90deg, #243b55, #141e30);
+    /*background: linear-gradient(90deg, #243b55, #141e30);
+   */
    
+   
+    background: url('/imagenes/fondos/joe-woods-4Zaq5xY5M_c-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa de oscurecimiento */
+    background-blend-mode: darken; /* Mezcla la capa oscura con la imagen */
+    color: #ffffff; /* Texto blanco para contraste */
+
 }
+
 
 
 
