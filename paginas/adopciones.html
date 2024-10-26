@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/estilos/piePagina.css">
     <link rel="stylesheet" href="/estilos/cabecera.css">
     <link rel="stylesheet" href="/estilos/tarjeta.css">
+    <link rel="stylesheet" href="/estilos/mensajeEmergente.css">
 
 
 
@@ -225,30 +226,38 @@
 
     </div>
 
+ <div class="form-registro">
+    <form id="form-registro">
+        <h4>Formulario registro</h4>
+        <input class="controls" type="text" name="name" id="name" placeholder="nombre" required>
+        <span class="error" id="nameError"></span>
+
+        <input class="controls" type="text" name="apellido" id="apellido" placeholder="apellido" required>
+        <span class="error" id="apellidoError"></span>
+
+        <input class="controls" type="email" name="email" id="email" placeholder="@email">
+        <span class="error" id="emailError"></span>
+
+        <input class="controls" type="number" name="telefono" id="telefono" placeholder="telefono" maxlength="11" required>
+        <span class="error" id="telefonoError"></span>
+
+        <p>estoy de acuerdo con los <a href="Terminos y condiciones">Terminos y condiciones</a></p>
+
+        <input class="boton" type="submit" value="Registrar">
+    </form>
     
+    <div class="mensajeEmergente" id="mensajeEmergente"></div>
+    <div class="modelo" id="modelo">
+        <p>Gracias por registrarse, espere nuestro llamado</p>
+        <button onclick="cerrarMensaje()">Cerrar</button>
+    </div>
+</div>
+
+        
 
 
-    <div class="form-registro">
-        <form id="form-registro">
-            <h4>Formulario registro</h4>
-            <input class="controls" type="text" name="name" id="name" placeholder="nombre" required>
-            <span class="error" id="nameError"></span>
 
-            <input class="controls" type="text" name="apellido" id="apellido" placeholder="apellido" required>
-            <span class="error" id="apellidoError"></span>
-
-            <input class="controls" type="email" name="email" id="email" placeholder="@email">
-            <span class="error" id="emailError"></span>
-
-            <input class="controls" type="text" name="telefono" id="telefono" placeholder="telefono" maxlength="11" required >
-            <span class="error" id="telefonoError"></span>
-
-            <p>estoy de acuerdo con los <a href="Terminos y condiciones">Terminos y condiciones</a></p>
-
-            <input class="boton" type="submit" value="Registrar">
-
-            <div class="feedback" id="feedback"></div>
-        </form>
+      
 
         
 <!--         <script>
@@ -299,6 +308,7 @@
 
     <script src="/scripts/footer.js"></script>
     <script src="/scripts/formulario.js"></script>
+    <script src="/scripts/mensajeEmergente.js"></script>
     
 </body>
 </html>
