@@ -226,51 +226,39 @@
 
     </div>
 
- <div class="form-registro">
-    <form id="form-registro">
-        <h4>Formulario registro</h4>
-        <input class="controls" type="text" name="name" id="name" placeholder="nombre" required>
-        <span class="error" id="nameError"></span>
 
-        <input class="controls" type="text" name="apellido" id="apellido" placeholder="apellido" required>
-        <span class="error" id="apellidoError"></span>
+    <div class="form-registro">
+            <form id="form-registro" novalidate autocomplete="off">
+                <h4>Formulario Adopcion</h4>
+                <input class="controls" type="text" name="name" id="name" placeholder="nombre" required>
+                <span class="error" id="nameError"></span>
 
-        <input class="controls" type="email" name="email" id="email" placeholder="@email">
-        <span class="error" id="emailError"></span>
+                <input class="controls" type="text" name="apellido" id="apellido" placeholder="apellido" required>
+                <span class="error" id="apellidoError"></span>
 
-        <input class="controls" type="number" name="telefono" id="telefono" placeholder="telefono" maxlength="11" required>
-        <span class="error" id="telefonoError"></span>
+                <input class="controls" type="email" name="email" id="email" placeholder="@email" >
+                <span class="error" id="emailError"></span>
 
-        <p>estoy de acuerdo con los <a href="Terminos y condiciones">Terminos y condiciones</a></p>
+                <input class="controls" type="tel" name="telefono" id="telefono" placeholder="telefono" maxlength="11" required>
+                <span class="error" id="telefonoError"></span>
 
-        <input class="boton" type="submit" value="Registrar">
-    </form>
-    
-    <div class="mensajeEmergente" id="mensajeEmergente"></div>
-    <div class="modelo" id="modelo">
-        <p>Gracias por registrarse, espere nuestro llamado</p>
-        <button onclick="cerrarMensaje()">Cerrar</button>
+
+                <input class="boton" type="submit" value="Enviar">
+                
+            </form>
+            
+            
     </div>
-</div>
 
         
+    <div class="feedback" id="feedback" style="font-style: italic;"> En breve estaremos estaremos en contacto <span id="nombre-feedback"></span> nos comunicaremos a tu numero de telefono <span id="telefono-feedback"></span>  </div>
 
-
+    
 
       
 
         
-<!--         <script>
-            // Capturamos el formulario por su ID
-            document.getElementById('form-registro').addEventListener('submit', function(e) {
-               e.preventDefault(); // Evita el envío del formulario y recarga de página
-         
-               // Aquí puedes hacer más validaciones si es necesario
-         
-               // Muestra el mensaje emergente
-               alert("¡Has sido registrado con éxito!");
-            });
-         </script> -->
+
     </div>
 </div>
 
@@ -306,9 +294,14 @@
     </footer>
 
 
+
+
+
+
     <script src="/scripts/footer.js"></script>
     <script src="/scripts/formulario.js"></script>
-    <script src="/scripts/mensajeEmergente.js"></script>
+    <!--   <script src="/scripts/mensajeEmergente.js"></script> 
+ -->
     
 </body>
 </html>

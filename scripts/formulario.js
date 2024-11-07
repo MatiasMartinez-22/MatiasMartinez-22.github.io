@@ -1,7 +1,7 @@
 
 
 
- const form = document.querySelector('.form-registro');
+ const form = document.querySelector('#form-registro');
 
  form.addEventListener('submit', function(event) {
      event.preventDefault(); // Evita que la página se recargue
@@ -27,8 +27,8 @@
      }
 
      // Validación de la apellido
-     if (apellido.value < 16 || apellido.value.trim() === "") {
-         showError('apellidoError', 'Debe tener al menos 16 años');
+     if ( apellido.value.trim() === "") {
+         showError('apellidoError', 'El apellido es obligatorio');
          apellido.classList.add('error-input');
          hasError = true;
      }
@@ -45,8 +45,8 @@
         showError('telefonoError', 'El número de teléfono no es válido');
         telefono.classList.add('error-input');
         hasError = true;
-    } */
-
+    } 
+*/
     // Validación del número de teléfono
 if (!/^[0-9]\d{3}[0-9]\d{5}$/.test(telefono.value.trim())) {
     showError('telefonoError', 'El número de teléfono no es válido');
@@ -54,13 +54,31 @@ if (!/^[0-9]\d{3}[0-9]\d{5}$/.test(telefono.value.trim())) {
     hasError = true;
 
 }
+/*
+const telefonoVal = /^\+?(\d{1,3})?[-.\s]?(\d{2,4})[-.\s]?(\d{3,5})[-.\s]?(\d{4})$/;
+if (!telefonoVal.test(telefono.value.trim())) {
+    showError('telefonoError', 'El número de teléfono no es válido. Por favor, ingrese un formato adecuado.');
+    telefono.classList.add('error-input');
+    hasError = true;
+}*/
 
 
 
      // Si no hay errores, se muestra el feedback
      if (!hasError) {
-         showFeedback(name.value, apellido.value, email.value, telefono.value);
-         form.reset(); // Limpia el formulario
+        
+        /*
+        document.getElementById("nombre-feedback").textContent = nombre.value;
+        document.getElementById("telefono-feedback").textContent = telefono.value;
+
+
+        document.getElementById("feedback").style.display = "block";*/
+
+
+
+         showFeedback(name.value, apellido.value, email.value, telefono.value);          
+
+         /*form.reset();*/ // Limpia el formulario
          clearErrors(); // Limpia los errores previos
      }
  });
@@ -82,19 +100,20 @@ if (!/^[0-9]\d{3}[0-9]\d{5}$/.test(telefono.value.trim())) {
 
 
 // Función para mostrar el feedback
+
 function showFeedback(name, apellido, email, telefono) {
-    const feedback = document.getElementById('feedback');
+    //const feedback = document.getElementById('feedback');
+    document.getElementById("nombre-feedback").textContent = name;
+    document.getElementById("telefono-feedback").textContent = telefono;
     feedback.style.display = 'block'; 
-    feedback.innerHTML = `
-        
-        <p>gracias por colaborar con nosotros
-        espere nuestro llamado</p>
-    `;
+    
+
+
 
     // Ocultar el feedback después de 5 segundos
-    setTimeout(() => {
+   setTimeout(() => {
         feedback.style.display = 'none';
-    }, 5000)
+    }, 5000) 
 }
 
 
@@ -108,10 +127,7 @@ function showFeedback(name, apellido, email, telefono) {
 
     }
 
-// Ocultar el feedback después de 5 segundos
-setTimeout(() => {
-    feedback.style.display = 'none';
-}, 5000)
+    
 
 
  

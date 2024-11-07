@@ -26,6 +26,7 @@
 .controls {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
 
     padding: 10px;
     border-radius: 4px;
@@ -70,23 +71,50 @@
 
 }
 
+
 .feedback {
+    
     margin-top: 15px;
     padding: 10px;
     height: auto;
-    width: auto;
+    width: 100%;
     display: none;  
     text-align-last: center;
     border-radius: 15px;
-    background-color: rgb(44, 44, 58);
-    
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
 }
 .feedback p {
+    /*
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 15px;*/
 }
 
+.error span {
+    
+    padding: 16px;
 
+    
+}
+
+.error  {
+    color: rgb(224, 12, 12);
+
+}
+
+.boton {
+    margin-top: 20px;
+}
+
+#form-registro{
+    text-align: left;
+   
+}
 
 
 
